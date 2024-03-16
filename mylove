@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Greeting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #message {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    #song {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="message"></div>
+  <audio id="birthdaySong" controls autoplay>
+    <source src="https://ph.video.search.yahoo.com/search/video?fr=mcafee&ei=UTF-8&p=i+love+300&type=E211PH885G0#id=3&vid=3d50a0e652b3afbb063cdc01c8a6aa6b&action=clicks" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    const messageElement = document.getElementById('message');
+    const name = prompt("Sheeland:");
+    const message = `Happy birthday, ${name}! 🎉🎂`;
+    messageElement.textContent = message;
+  </script>
+</body>
+</html>
